@@ -4,29 +4,71 @@
  img{
      display: block;
 }
+a:hover {
+  text-decoration: underline;
+}
+#leftnav {
+    display: flex;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+#rightnav {
+    display: flex;
+    flex-direction: row-reverse;
+}
+  .navtext{
+    font-family: arial, sans-serif;
+    font-size: 10.4px;
+  }
+  #searchbox{
+    text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 120px;
+  }
 
-  .searchbox{
-      margin:auto;
+  #gglimage{
+    width: 272px;
+    margin:auto;
+    position:relative;
+    top: 115px;
+  }
+
+  #gridimage{
+    width: 16px;
   }
 </style>
 
 <head>
+
+
+ 
+  <div id="leftnav">
+      <div id="about">    <a class="navtext">About</a> </div>
+      <div id="store"> <a class="navtext">Store</a></div>
+
+  </div>
+<div id="rightnav">
+  <div><img src="https://lh3.googleusercontent.com/-3t09PYwbn7o/AAAAAAAAAAI/AAAAAAAAAAA/AAKWJJMZ1rUsYeMfDZ62vBm1PeH--2mNLg.CMID/s32-c/photo.jpg"></div>
+  <div><img id="gridimage" src="menu-svgrepo-com.svg"></div>
+</div>
 </head>
 
 
 <body>
 
-<img style="margin:auto;" src="https://web.archive.org/web/20191130234759im_/https:/www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+<img id="gglimage" src="https://web.archive.org/web/20191130234759im_/https:/www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
 
 
-
-<form action="/submit-search">
-  <img src="https://www.google.com/images/searchbox/desktop_searchbox_sprites302_hr.png">
-  <input type="text" placeholder="Search" required>
-  <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+<form id="searchbox" action="/submit-search">
+    <img src="https://www.google.com/images/searchbox/desktop_searchbox_sprites302_hr.png">
+   <input type="text" placeholder="Search" required>
+   <img src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
 </form>
 
-
+ 
 </body>
-
- 	
